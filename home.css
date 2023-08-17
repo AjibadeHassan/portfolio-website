@@ -62,9 +62,9 @@ body .container .intro {
  padding: 15px;
 }
 
-body .container .intro>div {
+body .container .intro>span {
   display: block;
-  color: #ff0000;
+  color: #5b8efd;
   font-size: 95px;
   font-weight: 800;
   font-family: 'Open Sans', sans-serif;
@@ -73,10 +73,6 @@ body .container .intro>div {
   text-decoration: none;
 
   animation: fadeBounce 1s;
-}
-
-body .container .intro>div:first-child {
-  color: var(--color-white);
 }
 
 body .container .intro>div:hover {
@@ -110,4 +106,25 @@ body .container .intro>div:hover {
 
 .container .links a svg:hover {
   fill: var(--color-light-gray);
+}
+@media(max-width: 800px) {
+  .container {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  
+  .container .about {
+    margin-right: 10px;
+  }
+  .container .links {
+    width: 100%;
+    flex-direction: row;
+    height: fit-content;
+    padding-bottom: 40px;
+
+  }
+
+
+  
 }
